@@ -1,0 +1,29 @@
+{
+  "name": "pouchdb-websql-sqlite-server",
+  "version": "7.2.2",
+  "description": "Underlying server code for WebSQL and SQLite-based PouchDB server.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/pouchdb/pouchdb",
+  "dependencies": {
+    "pouchdb": "^7.2.1",
+    "express-pouchdb": "^4.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pouchdb-express-router": "^0.0.11",
+    "through2": "^4.0.2",
+    "ndjson": "^2.0.0",
+    "lodash": "^4.17.21",
+    "pouchdb-utils": "^7.2.1",
+    "inherits": "^2.0.4",
+    "readable-stream": "^3.6.0",
+    "http-proxy": "^1.18.1",
+    "qs": "^6.10.1"
+  },
+  "files": []
+}
