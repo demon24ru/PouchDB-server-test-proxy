@@ -1,4 +1,5 @@
 const { generateJwtTokens, auth, refreshToken } = require('./auth');
+const jwt = require('jsonwebtoken');
 const qs = require('qs');
 const httpProxy = require('http-proxy');
 const apiProxy = httpProxy.createProxyServer();
@@ -33,6 +34,15 @@ app.post('/login', (req, res, next)=> {
 
 app.post('/refresh', (req, res, next)=> {
     return refreshToken(req, res);
+});
+
+app.post('/decode', (req, res, next)=> {
+    const { token } = req.body;
+    res.status(200).json(
+        jwt.decode(token, {
+            algorithms: ["HS256"]
+        })
+    );
 });
 
 app.listen(3001, ()=>{

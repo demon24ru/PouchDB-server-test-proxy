@@ -1,4 +1,4 @@
-pouchdb-adapter-websql-core + SQLite
+pouchdb proxy with JWT authentication
 ======
 
 
