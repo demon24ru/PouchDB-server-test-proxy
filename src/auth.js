@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 const utils = require("express-pouchdb/lib/utils");
 
-const accessTokenSecret = 'sdfsdfssdfsdfsdf';
-const refreshTokenSecret = 'lklgkjdljfljkgdlkfgjldkfg';
+const accessTokenSecret = '6s54dfytrtrtr4s65d4fs6fd46s5fd45s64df4';
+const refreshTokenSecret = '6s54dfytrtrtr4s65d4fs6fd46s5fd45s64df4';
 const accessTokenExp = 2592000; // 30 days
 
 function generateJwtTokens(id) {
@@ -46,7 +46,7 @@ function refreshToken(req, res) {
     verifyRefresh(token);
 
     return res.status(200)
-            .json(generateJwtTokens('dfgdfgdfg-dfgdfgdfg-dfg-gfgfgf-fdgd'));
+            .json(generateJwtTokens('b26ac690-ea92-4952-9348-67a61ee615fd'));
 }
 
 function auth(req, res, next){
